@@ -57,7 +57,7 @@ Find the (only!!) person having a given _id, using Model.findById() -> Person. U
 
  
 
-Perform Classic Updates by Running Find, Edit, then Save
+### Perform Classic Updates by Running Find, Edit, then Save
 Find a person by _id ( use any of the above methods ) with the parameter personId as search key. Add "hamburger" to the list of the person's favoriteFoods (you can use Array.push()). Then - inside the find callback - save() the updated Person.
 
 Note: This may be tricky, if in your Schema, you declared favoriteFoods as an Array, without specifying the type (i.e. [String]). In that case, favoriteFoods defaults to Mixed type, and you have to manually mark it as edited using document.markModified('edited-field'). See [Mongoose documentation](https://https://mongoosejs.com/docs/schematypes.html#Mixed)
